@@ -38,47 +38,27 @@
       // var CTE = {};
       CTE.callback = () => {
         var aud = document.getElementsByTagName("audio")[0];
-        aud.volume = 0.3;
+        aud.volume = .3;
         aud.play();
 
         var typed = new Typed("#typing", {
-          strings: [
-            "Hello",
-            "FlashbyteV4#7701",
-            "dsc.bio/flashbytev4",
-            "https://discord.gg/8k7JPcP8xg",
-            "https://cracked.io/Flashbytee",
-            "Always HQ",
-            "glitch.atshop.io",
-          ],
+          strings: ["Hello","FlashbyteV4#7701", "dsc.bio/flashbytev4", "https://discord.gg/8k7JPcP8xg", "https://cracked.io/Flashbytee", "Always HQ", "glitch.atshop.io", ],
           typeSpeed: 45,
           backspeed: 90,
-          showCursor: false,
+          showCursor: false
         });
 
-        var lines = [
-          "Projects -",
-          "https://cracked.io/Flashbytee",
-          "glitch.atshop.io",
-          "https://discord.gg/vavn6G72zC",
-          "https://discord.gg/8k7JPcP8xg",
-        ];
-        for (var x = 0; x < lines.length; x++)
-          $("#marquee").append(
-            `${lines[x]}${
-              x < lines.length - 1
-                ? ' <img class="emoji" src="assets/images/av.png"> '
-                : ""
-            }`
-          );
+        var lines = ["Projects -", "https://cracked.io/Flashbytee", "glitch.atshop.io", "https://discord.gg/vavn6G72zC", "https://discord.gg/8k7JPcP8xg"];
+        for (var x = 0;x < lines.length;x++)
+          $("#marquee").append(`${lines[x]}${(x < lines.length - 1? ' <img class="emoji" src="assets/images/av.png"> ' : '')}`);
 
         $("#marquee").marquee({
           duration: 7500,
           gap: 100,
           delayBeforeStart: 1000,
-          direction: "left",
+          direction: 'left',
         });
-      };
+      }
       // CTE.callback();
     </script>
   </body>
