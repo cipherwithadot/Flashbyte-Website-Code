@@ -1,0 +1,21 @@
+{
+  "name": "something",
+  "description": "This app is for test.",
+  "keywords": [
+    "flashbyte",
+    "HTML5",
+    "pndaboi"
+  ],
+  "website": "http://pndaboi.is-a.dev/Flashbyte/",
+  "repository": "https://github.com/PndaBoi/Flashbyte/",
+  "logo": "https://github.com/PndaBoi/Flashbyte/assets/images/av.png",
+  "success_url": "/welcome",
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap"
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/PndaBoi/Flashbyte/app.json"
+    }
+  ],
+}
